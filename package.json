@@ -1,0 +1,30 @@
+{
+  "name": "practicing-react-vite",
+  "private": true,
+  "version": "1.0.0",
+  "description": "", 
+  "workspaces":[ 
+		"projects/**"
+	],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+		"lint": "eslint --fix . --ext .js,.jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "keywords": [],
+  "author": "", 
+  "license": "ISC",
+  "devDependencies": {
+		"eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.5",
+		"eslint-config-prettier": "^9.1.0",
+		"prettier": "3.2.5",
+		"standard": "^17.1.0"		
+	},
+	"eslintConfig": {
+		"extends": "./.eslintrc.json"
+	}
+}
